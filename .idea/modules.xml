@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/FastEC.iml" filepath="$PROJECT_DIR$/FastEC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fireflies-annotations/fireflies-annotations.iml" filepath="$PROJECT_DIR$/fireflies-annotations/fireflies-annotations.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fireflies-compiler/fireflies-compiler.iml" filepath="$PROJECT_DIR$/fireflies-compiler/fireflies-compiler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fireflies-core/fireflies-core.iml" filepath="$PROJECT_DIR$/fireflies-core/fireflies-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fireflies-ec/fireflies-ec.iml" filepath="$PROJECT_DIR$/fireflies-ec/fireflies-ec.iml" />
+    </modules>
+  </component>
+</project>
