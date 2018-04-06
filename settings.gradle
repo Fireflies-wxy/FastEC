@@ -1,0 +1,1 @@
+include ':app', ':fireflies-annotations', ':fireflies-compiler', ':fireflies-core', ':fireflies-ec'
