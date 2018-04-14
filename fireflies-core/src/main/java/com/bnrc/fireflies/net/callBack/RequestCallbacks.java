@@ -1,12 +1,13 @@
 package com.bnrc.fireflies.net.callBack;
 
 import android.os.Handler;
+import android.util.Log;
 
 import com.bnrc.fireflies.app.ConfigType;
 import com.bnrc.fireflies.app.Fireflies;
 import com.bnrc.fireflies.net.RestCreator;
-import com.bnrc.fireflies.ui.FirefliesLoader;
-import com.bnrc.fireflies.ui.LoaderStyle;
+import com.bnrc.fireflies.ui.loader.FirefliesLoader;
+import com.bnrc.fireflies.ui.loader.LoaderStyle;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -17,6 +18,8 @@ import retrofit2.Response;
  */
 
 public final class RequestCallbacks implements Callback<String> {
+
+    private static final String TAG = "RequestCallbacks";
 
     private final IRequest REQUEST;
     private final ISuccess SUCCESS;

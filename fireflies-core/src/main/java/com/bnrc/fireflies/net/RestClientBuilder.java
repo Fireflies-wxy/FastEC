@@ -6,7 +6,7 @@ import com.bnrc.fireflies.net.callBack.IError;
 import com.bnrc.fireflies.net.callBack.IFailure;
 import com.bnrc.fireflies.net.callBack.IRequest;
 import com.bnrc.fireflies.net.callBack.ISuccess;
-import com.bnrc.fireflies.ui.LoaderStyle;
+import com.bnrc.fireflies.ui.loader.LoaderStyle;
 
 import java.io.File;
 import java.util.WeakHashMap;

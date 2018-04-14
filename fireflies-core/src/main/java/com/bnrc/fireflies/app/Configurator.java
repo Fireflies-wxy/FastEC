@@ -1,14 +1,17 @@
 package com.bnrc.fireflies.app;
 
+import android.app.Activity;
 import android.os.Handler;
 
 import com.joanzapata.iconify.IconFontDescriptor;
 import com.joanzapata.iconify.Iconify;
+import com.orhanobut.logger.AndroidLogAdapter;
+import com.orhanobut.logger.Logger;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.WeakHashMap;
-
+import com.blankj.utilcode.util.Utils;
 import okhttp3.Interceptor;
 
 /**
@@ -44,7 +47,10 @@ public class Configurator {
 
 
     public final void configure(){
+        initIcons();
+        Logger.addLogAdapter(new AndroidLogAdapter());
         FIREFLIES_CONFIGS.put(ConfigType.CONFIG_READY,true);
+        Utils.init(Fireflies.getApplicationContext());
     }
 
     public final Configurator withApiHost(String host){
@@ -80,6 +86,21 @@ public class Configurator {
     public final Configurator withInterceptors(ArrayList<Interceptor> interceptors) {
         INTERCEPTORS.addAll(interceptors);
         FIREFLIES_CONFIGS.put(ConfigType.INTERCEPTOR, INTERCEPTORS);
+        return this;
+    }
+
+    public final Configurator withWeChatAppId(String appId) {
+            FIREFLIES_CONFIGS.put(ConfigType.WE_CHAT_APP_ID, appId);
+        return this;
+    }
+
+    public final Configurator withWeChatAppSecret(String appSecret) {
+            FIREFLIES_CONFIGS.put(ConfigType.WE_CHAT_APP_SECRET, appSecret);
+        return this;
+    }
+
+    public final Configurator withActivity(Activity activity) {
+        FIREFLIES_CONFIGS.put(ConfigType.ACTIVITY, activity);
         return this;
     }
 

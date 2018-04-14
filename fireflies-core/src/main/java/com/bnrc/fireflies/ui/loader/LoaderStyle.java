@@ -1,4 +1,4 @@
-package com.bnrc.fireflies.ui;
+package com.bnrc.fireflies.ui.loader;
 
 
 /**

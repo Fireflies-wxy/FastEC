@@ -1,4 +1,4 @@
-package com.bnrc.fireflies.ui;
+package com.bnrc.fireflies.ui.loader;
 
 import android.content.Context;
 import android.support.v7.app.AppCompatDialog;

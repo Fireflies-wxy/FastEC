@@ -28,4 +28,11 @@ dependencies {
     implementation project(':fireflies-ec')
     annotationProcessor project(':fireflies-compiler')
     implementation project(':fireflies-core')
+    implementation project(':fireflies-annotations')
+    //annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+    //
+    //    compile 'cn.jiguang.sdk:jpush:3.0.1'
+    //    compile 'cn.jiguang.sdk:jcore:1.1.0'
+    compile 'com.facebook.stetho:stetho:1.4.2'
+    compile 'com.facebook.stetho:stetho-okhttp3:1.4.2'
 }
