@@ -7,7 +7,11 @@ import com.bnrc.fireflies.delegates.bottom.BaseBottomDelegate;
 import com.bnrc.fireflies.delegates.bottom.BottomItemDelegate;
 import com.bnrc.fireflies.delegates.bottom.BottomTabBean;
 import com.bnrc.fireflies.delegates.bottom.ItemBuilder;
+import com.bnrc.fireflies.delegates.web.WebDelegate;
+import com.bnrc.fireflies.ec.main.cart.ShopCartDelegate;
+import com.bnrc.fireflies.ec.main.discover.DiscoverDelegate;
 import com.bnrc.fireflies.ec.main.index.IndexDelegate;
+import com.bnrc.fireflies.ec.main.persional.PersonalDelegate;
 import com.bnrc.fireflies.ec.main.sort.SortDelegate;
 
 import java.util.LinkedHashMap;
@@ -24,9 +28,9 @@ public class EcBottomDelegate extends BaseBottomDelegate {
         final LinkedHashMap<BottomTabBean,BottomItemDelegate> items = new LinkedHashMap<>();
         items.put(new BottomTabBean("{fa-home}", "主页"), new IndexDelegate());
         items.put(new BottomTabBean("{fa-sort}", "分类"), new SortDelegate());
-        items.put(new BottomTabBean("{fa-compass}", "发现"), new IndexDelegate());
-        items.put(new BottomTabBean("{fa-shopping-cart}", "购物车"), new IndexDelegate());
-        items.put(new BottomTabBean("{fa-user}", "我的"), new IndexDelegate());
+        items.put(new BottomTabBean("{fa-compass}", "发现"), new DiscoverDelegate());
+        items.put(new BottomTabBean("{fa-shopping-cart}", "购物车"), new ShopCartDelegate());
+        items.put(new BottomTabBean("{fa-user}", "我的"), new PersonalDelegate());
         return builder.addItems(items).build();
     }
 

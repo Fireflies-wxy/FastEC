@@ -61,8 +61,6 @@ public class IndexDelegate extends BottomItemDelegate{
                         final IndexDataConverter converter = new IndexDataConverter();
                         converter.setJsonData(response);
                         final ArrayList<MultipleItemEntity> list = converter.convert();
-                        final String image = list.get(1).getField(MultipleFields.IMAGE_URL);
-                        Toast.makeText(getContext(),image,Toast.LENGTH_SHORT).show();
                     }
                 })
                 .build()
